@@ -1,0 +1,68 @@
+\loop\iftrue%
+\errmessage{This article is copyrighted by ___ and should not be TeXed}%
+\repeat%
+
+\documentclass[a4paper, 10 pt, conference]{ieeeconf}  % Comment this line out
+\IEEEoverridecommandlockouts%
+\pdfminorversion=4%
+\input{preamble}
+% \usepackage{flushend}% to equalize last page %%% use when text complete
+
+\title{\LARGE \bf
+  Article title
+}
+
+\author{Rafael Accácio Nogueira
+  % <-this % stops a space
+  \thanks{The author is with\newline
+    \{rafael-accacio.nogueira\}
+    @centralesupelec.fr}\newline
+  %
+}
+
+\draft% show todos in red
+% \final% give error if there is todos
+% \comments% blank right column to make comments in pen & paper
+
+% \newcommand{\id}{}
+% \newcommand{\price}{31.00}
+\pubid{\begin{minipage}{\textwidth}\ \\[50pt]\centering
+  \copyright{} 20XX \_\_\_\_.\\
+  Personal use is permitted, but republication/redistribution requires permission.\\
+  % See https://www.ieee.org/publications/rights/index.html for more information.% if IEEE
+\end{minipage}
+}
+\makeglossaries
+\acrSing{mpc}{MPC}{Model-based Predictive Control}
+\acrSing{dmpc}{dMPC}{distributed Model-based Predictive Control}
+
+\begin{document}
+\maketitle
+% \IEEEpeerreviewmaketitle%
+% \thispagestyle{empty}
+% \pagestyle{empty}
+
+\begin{abstract}
+\blindmathfalse
+\blindtext
+\end{abstract}
+
+
+\section{INTRODUCTION}
+\mpc\ problems can be decomposed into multiple parts to be solved in parallel, this kind of algorithm is called \dmpc.
+Different kinds of \dmpc\ have been already defined \dots{}.%
+
+\section{METHODS}
+As seen in \cite{NogueiraEtAl2021},
+\blindmathpaper%
+\blindmathpaper%
+
+% \enlargethispage{-2.8cm}
+
+\section{CONCLUSION}
+\blindtext
+
+\bibliographystyle{IEEEtran}
+\bibliography{bibliography}
+
+\end{document}
